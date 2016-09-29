@@ -15,6 +15,9 @@ class Aamath < Formula
   # https://github.com/Homebrew/homebrew/issues/23872
   patch :DATA
 
+  depends_on "flex"
+  depends_on "bison"
+
   def install
     ENV.j1
     system "make"
